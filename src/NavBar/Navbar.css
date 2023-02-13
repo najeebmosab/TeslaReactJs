@@ -1,0 +1,151 @@
+/* style first Header */
+#headerExplane {
+    background-color: #fff;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#headerExplane p {
+    width: auto;
+    margin: 20px auto;
+}
+
+/* End style first Header */
+#nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    height: fit-content;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+}
+#nav section .chg-Color{
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+#nav section .chg-Color2{
+    color: #f00;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+#nav section a {
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+#nav section a:hover {
+    background-color: black;
+}
+
+.bg-img {
+    background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/5a7b3001-249f-4065-a330-4ea6a17ccf7b/bvlatuR/std/2560x1708/Model-3-Main-Hero-Desktop-LHD);
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    /* padding: auto; */
+
+}
+
+#infScreen {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    padding: 50px 0px 10px 0px;
+    font-size: 1.5vw;
+}
+
+#infScreen div h2 {
+    color: #fff;
+}
+
+#infScreen div a {
+    color: #fff;
+    text-decoration: underline;
+    font-weight: 900;
+}
+
+#infoTeslaCar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr;
+
+}
+
+#infoTeslaCar .m-div {
+    padding: 10px 20px;
+    margin: 0px 10px;
+    color: #fff;
+}
+
+#infoTeslaCar .m-div button {
+    border: solid 1px #fff;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+}
+
+#infoTeslaCar .m-div button:hover {
+    border: solid 1px #fff;
+    color: #000;
+    background-color: #fff;
+}
+#arrowDown{
+    color: #fff;
+    text-decoration: none;
+    animation: MoveUpDown 1s linear infinite;
+}
+@keyframes MoveUpDown {
+    from {
+        transform: translateY(0);
+    }
+    
+    to {
+        transform: translateY(5px);
+    }
+}
+
+@media (max-width:768px) {
+    #linkNavBar {
+        display: none;
+    }
+    #infoTeslaCar .m-div{
+        padding: 10px;
+    }
+    #headerExplane{
+        display: none;
+    }
+    
+    #infoTeslaCar{
+        grid-template-columns: 1fr 1fr;
+        font-size: 2.7vw;
+    }
+    .a-none
+    {
+        display: none;
+    }
+}
+
+@media (max-width:500px) {
+      
+    #infoTeslaCar{
+        grid-template-columns: 1fr 1fr;
+        font-size: 4vw;
+    }
+}
